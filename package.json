@@ -1,9 +1,8 @@
 {
-  "name": "@nzdmzxy/catalyst-contracts",
-  "version": "1.0.0",
+  "name": "nzdmzxy-catalyst-contracts",
+  "version": "1.0.1",
   "description": "Contracts",
-  "main": "index.js",
-  "repository": "git+https://github.com/nzdmzxy/catalyst-contracts.git",
+  "main": "dist/index.js",
   "author": "franksee-Contributors",
   "scripts": {
     "cleanup": "shx rm -rf dist node_modules",
@@ -14,6 +13,21 @@
   },
   "dependencies": {
     "eth-connect": "^6.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nzdmzxy/catalyst-contracts-.git"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
   },
   "devDependencies": {
     "@dcl/eslint-config": "^1.0.4",
